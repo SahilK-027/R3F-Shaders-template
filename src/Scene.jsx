@@ -30,7 +30,6 @@ const Fragment = () => {
                 vertexShader={vertexShader}
                 uniforms={uniforms}
                 side={THREE.DoubleSide}
-                wireframe={true}
             />
         </mesh>
     );
@@ -38,7 +37,7 @@ const Fragment = () => {
 
 const Scene = () => {
     return (
-        <Canvas camera={{ position: [0.0, 0.0, 2.0] }}>
+        <Canvas camera={{ position: [1.0, 1.0, 1.25] }}>
             <Fragment />
             <axesHelper />
             <OrbitControls />
